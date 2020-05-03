@@ -1,0 +1,197 @@
+/** Base styles **/
+body{
+	color: #ffffff;
+	font-family: 'Montserrat', sans-serif;
+}
+
+/** Grid **/
+.full-width {
+	margin: 0 auto;
+	width: 1200px;
+}
+
+.half-width {
+	width: 600px;
+	float: left;
+}
+
+.third-width {
+	width: 400px;
+	float: left;
+}
+
+/** Header Section **/
+header {
+	height: 75px;
+	
+}
+
+header h1 {
+	padding: 10px 0 20px 0;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	color: #77a466;
+	text-transform: uppercase;
+}
+
+header h1 span {
+	color: #000000;
+}
+
+header nav {
+	float: right;
+	padding: 20px 0 20px 0;
+}
+
+header nav ul li {
+	display: inline-block;
+	text-transform: uppercase;
+	color: #9bbc8f;
+}
+
+.half-width a {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #9bbc8f;
+	text-decoration: none;
+	padding-left: 14px;	
+}
+
+#fresh-food-image {
+	height: 300px;
+	width: 1140px;
+	background: url(../img/hero-image.png);
+	background-size: cover;
+	margin: 0px auto 0px auto;
+	border-top: 5px solid #77a466;
+	border-bottom: 5px solid #77a466;
+	clear: both;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+/** About Section **/
+#about h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	color: #77a466;
+	text-transform: uppercase;
+}
+
+#about p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	font-weight: regular;
+	color: #555555;
+	padding-bottom: 15px;
+}
+
+/** Menu Section **/
+
+#menu .third-width {
+	height: 250px;
+	border-top: 1px solid #dedbdc;
+	border-right: 1px solid #dedbdc;
+	border-bottom: 1px solid #dedbdc;
+}
+
+#menu h3 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+	padding: 20px 0 10px 0;	
+}
+/** margin and padding at 0 removes list formatting**/
+#menu ul {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+
+#menu a {
+	text-decoration: none;
+	color: #9bbc8f;
+	line-height: 2;
+}
+
+/** Review Section **/
+
+#review .third-width {
+	height: 250px;
+	border-top: 1px solid #dedbdc;
+	border-right: 1px solid #dedbdc;
+	border-bottom: 1px solid #dedbdc;
+}
+
+#review h3 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+	padding: 20px 20px 20px 20px;
+}
+
+#review p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+	font-weight: regular;
+	color: #000000;
+	padding: 0px 20px 0px 20px;
+}
+
+/** Location Section **/
+#locations .third-width {
+	height: 250px;
+	border-top: 1px solid #dedbdc;
+	border-bottom: 1px solid #dedbdc;
+}
+
+#locations h3 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+	padding: 20px 20px 20px 20px;
+
+}
+
+#locations ul {
+	margin: 0;
+	padding: 0;
+}
+
+#locations ul li {
+	color: #000000;
+	list-style-type: none;
+	padding-left: 20px;
+}
+/** Footer Section **/
+
+footer .full-width {
+	margin: 10px auto 0px auto;
+	clear: both;
+	color:blue;
+}
+
+footer h2 {
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+footer span {
+	font-family: font-family: 'Montserrat', sans-serif;
+	font-family: 'Cedarville Cursive', cursive;
+	text-transform: lowercase;
+	color: #77a466;
+	font-style: oblique;
+}
+
+
