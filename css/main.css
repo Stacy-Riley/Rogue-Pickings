@@ -21,6 +21,7 @@ body{
 }
 
 /** Header Section **/
+
 header {
 	height: 75px;
 	
@@ -73,6 +74,7 @@ header nav ul li {
 }
 
 /** About Section **/
+
 #about h2 {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 30px;
@@ -106,6 +108,7 @@ header nav ul li {
 	padding: 20px 0 10px 0;	
 }
 /** margin and padding at 0 removes list formatting**/
+
 #menu ul {
 	display: inline-block;
 	margin: 0;
@@ -144,6 +147,7 @@ header nav ul li {
 }
 
 /** Location Section **/
+
 #locations .third-width {
 	height: 250px;
 	border-top: 1px solid #dedbdc;
