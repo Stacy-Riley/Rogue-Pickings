@@ -1,201 +1,241 @@
-/** Base styles **/
-body{
-	color: #ffffff;
-	font-family: 'Montserrat', sans-serif;
+@charset="UTF-8"
+
+/*Built First for Mobil-size, 
+then scaled up to tablet and desktop
+with media queries**/
+
+html {
+	font-size: 16px;
 }
 
-/** Grid **/
-.full-width {
-	margin: 0 auto;
-	width: 1200px;
+body {
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1em;
 }
 
-.half-width {
-	width: 600px;
-	float: left;
+.container{
+  	max-width: 1200px;
+  	width: 90%;
+  	margin: auto;
 }
 
-.third-width {
-	width: 400px;
-	float: left;
+h1,
+h2,
+h3,
+h4 {
+	color: black;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+h1 {
+	font-size: 1.875em;
+}
+h2 {
+    font-size: 1.5em;
+}
+h3 {
+	font-size: 1.125em;
+}
+h4 {
+	font-size: 0.875em;
 }
 
-/** Header Section **/
-
-header {
-	height: 75px;
+p {
+	font-size: 0.875em;
 	
+    padding: 0 20px;
+}
+
+.header-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+}
+header {
+	margin: auto;
 }
 
 header h1 {
-	padding: 10px 0 20px 0;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 30px;
-	font-weight: bold;
-	color: #77a466;
-	text-transform: uppercase;
+	margin: 0;
+	padding: 20px 0 10px 0;
+}
+
+/** Decorative Line under Name **/
+hr {
+	width: 90%;
+	border: 0;
+    height: 2px;   
+    background-image: linear-gradient(to right, 
+    	rgba(0, 0, 0, 0), 
+    	rgba(0, 0, 0, 0.75), 
+    	rgba(0, 0, 0, 0));
 }
 
 header h1 span {
-	color: #000000;
+	color: #77a466;
 }
 
 header nav {
-	float: right;
-	padding: 20px 0 20px 0;
+	padding: 10px 0;
+	display: flex;
+	justify-content: center;
+}
+
+header nav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
 }
 
 header nav ul li {
-	display: inline-block;
 	text-transform: uppercase;
-	color: #9bbc8f;
+	font-weight: 700;
+	font-size: 0.875em;
+	padding: 0 0 5px 0;
 }
 
-.half-width a {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 16px;
-	font-weight: bold;
-	color: #9bbc8f;
+header nav ul li a{
 	text-decoration: none;
-	padding-left: 14px;	
+	color:#77a466;
 }
 
-#fresh-food-image {
-	height: 300px;
-	width: 1140px;
-	background: url(../img/hero-image.png);
-	background-size: cover;
-	margin: 0px auto 0px auto;
-	border-top: 5px solid #77a466;
-	border-bottom: 5px solid #77a466;
-	clear: both;
-	padding-left: 30px;
-	padding-right: 30px;
+.top-section,
+.bottom-section {
+	margin: 0 auto;
 }
 
-/** About Section **/
+.main-image img {
+	width: 100%;
+	border-bottom: 3px solid #77a466;
+}
 
-#about h2 {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 30px;
-	font-weight: bold;
+.main-title h3 {
+	text-align: left;
+	padding: 5px 0;
 	color: #77a466;
-	text-transform: uppercase;
+}
+.main-title p {
+	padding: 0;
+	font-size: 1em;
+	
 }
 
-#about p {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 20px;
-	font-weight: regular;
-	color: #555555;
-	padding-bottom: 15px;
+.bottom-section {
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+}
+.section-one {
+	display: flex;
+	flex-grow: 5;
+	align-items: center;
+	flex-flow: column wrap;
+}
+.section-two {
+	display: flex;
+	flex-grow: 5;
+	align-items: center;
+	flex-flow: column wrap;
+}
+.section-three {
+	display: flex;
+	flex-grow: 5;
+	align-items: center;
+	flex-flow: column wrap;
 }
 
-/** Menu Section **/
+.section-one h4 {
+	padding: 5px 0;
 
-#menu .third-width {
-	height: 250px;
-	border-top: 1px solid #dedbdc;
-	border-right: 1px solid #dedbdc;
-	border-bottom: 1px solid #dedbdc;
 }
 
-#menu h3 {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 12px;
-	font-weight: bold;
-	color: #000000;
-	padding: 20px 0 10px 0;	
+.section-two {
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
 }
-/** margin and padding at 0 removes list formatting**/
 
-#menu ul {
-	display: inline-block;
-	margin: 0;
+.section-two h4,
+.section-three h4 {
+	padding: 5px 30px;
+}
+
+.menu {
+	list-style: none;
 	padding: 0;
 }
 
-#menu a {
-	text-decoration: none;
-	color: #9bbc8f;
-	line-height: 2;
+.menu li {
+	padding: 10px 0;
+	color:#77a466;
 }
 
-/** Review Section **/
-
-#review .third-width {
-	height: 250px;
-	border-top: 1px solid #dedbdc;
-	border-right: 1px solid #dedbdc;
-	border-bottom: 1px solid #dedbdc;
+.reviews {
+	color: #333;
+	font-size: 1em;
+	
 }
 
-#review h3 {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 12px;
-	font-weight: bold;
-	color: #000000;
-	padding: 20px 20px 20px 20px;
+.address {
+	font-size: 1em;
+	
 }
 
-#review p {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 12px;
-	font-weight: regular;
-	color: #000000;
-	padding: 0px 20px 0px 20px;
-}
-
-/** Location Section **/
-
-#locations .third-width {
-	height: 250px;
-	border-top: 1px solid #dedbdc;
-	border-bottom: 1px solid #dedbdc;
-}
-
-#locations h3 {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 12px;
-	font-weight: bold;
-	color: #000000;
-	padding: 20px 20px 20px 20px;
-
-}
-
-#locations ul {
-	margin: 0;
-	padding: 0;
-}
-
-#locations ul li {
-	color: #000000;
-	list-style-type: none;
-	padding-left: 20px;
-}
-/** Footer Section **/
-
-footer .full-width {
-	margin: 10px auto 0px auto;
-	clear: both;
-	color:blue;
-}
-
-footer h2 {
+footer {
+	
+	border-top: 3px solid #eee;
+	margin: 0 auto;	
 	text-align: center;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 30px;
-	font-weight: bold;
-	color: #000000;
-	text-transform: uppercase;
 }
 
 footer span {
-	font-family: font-family: 'Montserrat', sans-serif;
-	font-family: 'Cedarville Cursive', cursive;
+	font-family: 'Galada', cursive;
 	text-transform: lowercase;
 	color: #77a466;
-	font-style: oblique;
+	font-size: 0.875em;
 }
 
+@media (min-width: 768px){
+	.bottom-section{
+		flex-flow: row wrap;
+	}
+	.section-one, 
+	.section-two,
+	.section-three {
+	align-items: center;
+	width: 33%;
+	}
+	header nav ul li {
+	font-size: 0.875em;
+	padding: 10px 10px;
+	display: inline;
+	}
+	.main-image{
+		display: flex;
+		height: 325px;
+	}
+	.main-image img {
+		flex-grow: 1;
+		padding-top: 10px;
+	}
+	footer {
+		padding-top: 10px;
+	}	
+}
 
+@media (min-width: 1200px) {
+	.main-image{
+		display: flex;
+		height: 325px;
+	}
+	.main-image img {
+		flex-grow: 1;
+		padding-top: 10px;
+	}
+	footer {
+		padding-top: 10px;
+	}	
+}
