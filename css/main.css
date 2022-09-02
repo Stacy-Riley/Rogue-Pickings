@@ -1,197 +1,264 @@
-/** Base styles **/
-body{
-	color: #ffffff;
-	font-family: 'Montserrat', sans-serif;
+/***********************************************************/
+/*******************  MOBIL-FIRST  *************************/
+/***********************************************************/
+html {
+	font-size: 16px;
 }
 
-/** Grid **/
-.full-width {
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	font-size: 1em;
+}
+
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+	max-width: 1200px;
 	margin: 0 auto;
-	width: 1200px;
 }
 
-.half-width {
-	width: 600px;
-	float: left;
+h1,
+h2,
+h3 {
+	color: black;
+	text-transform: uppercase;
+	font-weight: 700;
 }
 
-.third-width {
-	width: 400px;
-	float: left;
+h1 {
+	font-size: 1.875em;
 }
 
-/** Header Section **/
+h2 {
+	font-size: 1.125em;
+}
+
+h3 {
+	font-size: .75em;
+}
+
+p {
+	font-size: .875em;
+	line-height: 21px;
+    padding: 0 30px;
+}
+
+/*The widths are in a percentage!*/
 header {
-	height: 75px;
-	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column wrap;   /*mobil set to column*/
+	width: 100%;
+	margin: 0 auto;
 }
 
 header h1 {
-	padding: 10px 0 20px 0;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 30px;
-	font-weight: bold;
-	color: #77a466;
-	text-transform: uppercase;
+	border-bottom: 3px solid #77a466;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 38px 0 20px 0;
+	margin: 0;
+	width: 90%;
 }
 
 header h1 span {
-	color: #000000;
+	color: #77a466;
 }
 
-header nav {
-	float: right;
-	padding: 20px 0 20px 0;
+header nav ul {
+	margin: 16px 0;
+	padding: 0;
 }
 
 header nav ul li {
-	display: inline-block;
 	text-transform: uppercase;
-	color: #9bbc8f;
+	font-weight: 700;
+	font-size: .875em;
+	list-style: none; 
+	padding: 15px 10px; 
 }
 
-.half-width a {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 16px;
-	font-weight: bold;
-	color: #9bbc8f;
+header nav ul li a{
+	color:#77a466;
 	text-decoration: none;
-	padding-left: 14px;	
 }
 
-#fresh-food-image {
-	height: 300px;
-	width: 1140px;
-	background: url(../img/hero-image.png);
-	background-size: cover;
-	margin: 0px auto 0px auto;
-	border-top: 5px solid #77a466;
-	border-bottom: 5px solid #77a466;
-	clear: both;
-	padding-left: 30px;
-	padding-right: 30px;
+.top-section,
+.bottom-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column wrap;
 }
 
-/** About Section **/
-#about h2 {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 30px;
-	font-weight: bold;
+.main-image {  /*third layer container for <img> tag */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.main-image img {
+	border-top: 3px solid #77a466;
+	border-bottom: 3px solid #77a466;
+	width: 90%;
+}
+
+.main-title {
+	width: 90%;
+}
+
+.main-title h2 {
+	text-align: left;
+	padding: 5px 0;
 	color: #77a466;
-	text-transform: uppercase;
+	width: 100%;
 }
 
-#about p {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 20px;
-	font-weight: regular;
-	color: #555555;
-	padding-bottom: 15px;
-}
-
-/** Menu Section **/
-
-#menu .third-width {
-	height: 250px;
-	border-top: 1px solid #dedbdc;
-	border-right: 1px solid #dedbdc;
-	border-bottom: 1px solid #dedbdc;
-}
-
-#menu h3 {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 12px;
-	font-weight: bold;
-	color: #000000;
-	padding: 20px 0 10px 0;	
-}
-/** margin and padding at 0 removes list formatting**/
-#menu ul {
-	display: inline-block;
-	margin: 0;
+.main-title p {
 	padding: 0;
+	font-size: 1em;
+	line-height: 25px;
+	width: 100%;
 }
 
-#menu a {
-	text-decoration: none;
-	color: #9bbc8f;
-	line-height: 2;
+.section-one,
+.section-two,
+.section-three {
+	border-top: 1px solid #eee;
+	width: 90%;
 }
 
-/** Review Section **/
-
-#review .third-width {
-	height: 250px;
-	border-top: 1px solid #dedbdc;
-	border-right: 1px solid #dedbdc;
-	border-bottom: 1px solid #dedbdc;
+.section-one h3 {
+	padding-top: 5px;
+	margin: 12px 0 12px 0;
 }
 
-#review h3 {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 12px;
-	font-weight: bold;
-	color: #000000;
-	padding: 20px 20px 20px 20px;
+.section-two h3,
+.section-three h3 {
+	padding-top: 5px; 
+	margin: 12px 0 12px 0;
 }
 
-#review p {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 12px;
-	font-weight: regular;
-	color: #000000;
-	padding: 0px 20px 0px 20px;
+.section-two p,
+.section-three p {
+	padding: 0;   
 }
 
-/** Location Section **/
-#locations .third-width {
-	height: 250px;
-	border-top: 1px solid #dedbdc;
-	border-bottom: 1px solid #dedbdc;
+.menu {                     
+	list-style: none;
+	padding-left: 0;        
+	margin-top: 18px;
 }
 
-#locations h3 {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 12px;
-	font-weight: bold;
-	color: #000000;
-	padding: 20px 20px 20px 20px;
-
+.menu li {
+	padding-bottom: 15px;               
+	color:#77a466;
 }
 
-#locations ul {
-	margin: 0;
-	padding: 0;
+.reviews {
+	color: #333;
+	font-size: 1em;
+	line-height: 21px;
 }
 
-#locations ul li {
-	color: #000000;
-	list-style-type: none;
-	padding-left: 20px;
-}
-/** Footer Section **/
-
-footer .full-width {
-	margin: 10px auto 0px auto;
-	clear: both;
-	color:blue;
+.address {
+	font-size: 1em;
+	line-height: 24px;
 }
 
-footer h2 {
+footer {
+	border-top: 3px solid #eee;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+	margin: 0 auto;
 	text-align: center;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 30px;
-	font-weight: bold;
-	color: #000000;
-	text-transform: uppercase;
+	width: 90%;
 }
 
 footer span {
-	font-family: font-family: 'Montserrat', sans-serif;
-	font-family: 'Cedarville Cursive', cursive;
+	font-family: 'Galada', cursive;
 	text-transform: lowercase;
 	color: #77a466;
-	font-style: oblique;
+	font-size: .875em;
 }
 
 
+
+/******************************************************/
+/*******************  TABLET  *************************/
+/******************************************************/
+@media print {    
+	body {
+		background: none;
+	}
+	img {
+		display: none;
+	}
+}
+
+@media (min-width: 768px){
+	.bottom-section {
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;  /* raises all to the top of y axis */
+		flex-flow: row wrap; 
+		width: 90%;
+	}
+	.bottom-section h3,
+	.bottom-section p {
+		padding-left: 15px;
+	}
+	.section-one ul {
+		padding-left: 15px;
+	}
+	.section-one,
+	.section-two,
+	.section-three {
+		border: 1px solid #eee;
+		border-bottom: none;
+		min-height: 200px; /*set this so all three divs were the same height*/
+		width: 33%; 
+	}
+	.main-image img {
+		border-top: 4px solid #77a466;
+		border-bottom: 4px solid #77a466;
+	}
+}
+
+
+
+/******************************************************/
+/*******************  DESKTOP *************************/
+/******************************************************/
+@media (min-width: 1200px){
+	header {
+		flex-flow: row nowrap; /*mobil set to column*/
+		width: 90%;
+	}
+	header h1 {
+		border-bottom: none;
+		justify-content: flex-start;
+		width: 100%;
+	}
+	header ul  {
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-end;
+		flex-flow: row nowrap; 
+		width: 100%;
+	}
+	header nav ul li {
+		padding-top: 40px;
+	}
+}
